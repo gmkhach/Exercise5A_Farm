@@ -11,11 +11,15 @@ namespace Exercise5A
         public Farm()
         {
             // creates a list of animals to be used throughout the program
-            farmAnimals = Utilities.PopulateFarm();
+            animals = Utilities.PopulateFarm();
             // creates a list of farm products
-            productList = new List<FarmProduct>();
+            products = new List<FarmProduct>();
         }
-        private List<Object> farmAnimals;
-        private List<FarmProduct> productList;
+
+        private List<Object> animals;
+        private List<FarmProduct> products;
+
+        public List<Object> GetAnimals() => animals;
+        public List<FarmProduct> GetProducts() => products;
     }
 }
