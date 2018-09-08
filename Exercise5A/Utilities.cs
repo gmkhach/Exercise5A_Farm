@@ -8,10 +8,11 @@ namespace Exercise5A
 {
     class Utilities
     {
+        // Requirement #3 - creates at least four animals of each kind based on user input. 
         // prompts the user to type in animal names and creates an object of a coresponding animal type for each name.
-        public static List<object> PopulateFarm()
+        public static List<Object> PopulateFarm()
         {
-            var farmAnimals = new List<object>();
+            var farmAnimals = new List<Object>();
             string[] animals = { "cows", "horses", "sheeps", "ducks" };
             Console.WriteLine("Hello. Let's create your farm animals.");
             try

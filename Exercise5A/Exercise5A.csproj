@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cow.cs" />
+    <Compile Include="Farm.cs" />
     <Compile Include="Sheep.cs" />
     <Compile Include="Duck.cs" />
     <Compile Include="Horse.cs" />

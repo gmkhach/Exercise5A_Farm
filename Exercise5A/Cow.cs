@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Exercise5A
 {
+    // Requirement #2 - Create one class with one method.
     class Cow
     {
         public Cow(string name)
@@ -23,6 +24,8 @@ namespace Exercise5A
         public string GetSound() => sound;
         public int GetSize() => size;
 
+        // Requriement #4 - create four methods for each class. Lines 29-56
+        // Requirement #2 - create one class with one method. lines 29-32
         public void Speak()
         {
             Console.WriteLine($"{sound}! I'm a cow. My name is {name}, and I eat hay.");
@@ -53,6 +56,5 @@ namespace Exercise5A
             }
             return calves;
         }
-
     }
 }

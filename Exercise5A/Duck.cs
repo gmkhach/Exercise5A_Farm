@@ -23,6 +23,7 @@ namespace Exercise5A
         public string GetSound() => sound;
         public int GetSize() => size;
 
+        // Requriement #4 - create four methods for each class. Lines 27-56
         public void Speak()
         {
             Console.WriteLine($"{sound}! I'm a duck. My name is {name}, and I eat snails.");
