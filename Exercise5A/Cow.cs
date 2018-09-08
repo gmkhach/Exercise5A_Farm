@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace Exercise5A
 {
     // Requirement #2 - Create one class with one method.
+    // Requirement #3 - create four classes, one method. Lines 11-33. Also see classes Duck, Horse, and Sheep. 
     class Cow
     {
         public Cow(string name)
@@ -24,7 +25,7 @@ namespace Exercise5A
         public string GetSound() => sound;
         public int GetSize() => size;
 
-        // Requriement #4 - create four methods for each class. Lines 29-56
+        // Requriement #4 - create four methods for each class. Lines 30-59. Also see classes Duck, Horse, and Sheep.
         // Requirement #2 - create one class with one method. lines 29-32
         public void Speak()
         {

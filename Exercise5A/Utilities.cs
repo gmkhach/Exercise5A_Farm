@@ -8,7 +8,6 @@ namespace Exercise5A
 {
     class Utilities
     {
-        // Requirement #3 - creates at least four animals of each kind based on user input. 
         // prompts the user to type in animal names and creates an object of a coresponding animal type for each name.
         public static List<Object> PopulateFarm()
         {

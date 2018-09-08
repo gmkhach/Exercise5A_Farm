@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Exercise5A
 {
+    // Requirement #3 - create four classes, one method. Lines 10-31. Also see classes Cow, Horse, and Sheep. 
     class Duck
     {
         public Duck(string name)
@@ -23,7 +24,7 @@ namespace Exercise5A
         public string GetSound() => sound;
         public int GetSize() => size;
 
-        // Requriement #4 - create four methods for each class. Lines 27-56
+        // Requriement #4 - create four methods for each class. Lines 28-57. Also see classes Cow, Horse, and Sheep..
         public void Speak()
         {
             Console.WriteLine($"\n{sound}! I'm a duck. My name is {name}, and I eat snails.");

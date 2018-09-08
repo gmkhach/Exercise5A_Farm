@@ -15,7 +15,5 @@ namespace Exercise5A
             // Makes each animal in the farm speak.
             myFarm.animalIntroduction();
         }
-
-
     }
 }
