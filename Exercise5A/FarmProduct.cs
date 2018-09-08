@@ -16,5 +16,7 @@ namespace Exercise5A
 
         private string type;
         private int quantity;
+
+        public void SetQuantity(int i) => quantity += i;
     }
 }

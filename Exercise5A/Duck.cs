@@ -15,7 +15,7 @@ namespace Exercise5A
 
         private string name;
         private string kind = "duck";
-        private string sound = "quack";
+        private string sound = "Quack, quack";
         private int size = 1;
 
         public string GetName() => name;
@@ -25,19 +25,20 @@ namespace Exercise5A
 
         public void Speak()
         {
-            Console.WriteLine($"Quack, quack! I'm a duck. My name is {name}, and I eat snails.");
+            Console.WriteLine($"{sound}! I'm a duck. My name is {name}, and I eat snails.");
         }
 
         public void Eat(string food)
         {
             if(food == "snail")
-            size++;
+                size++;
+            else
+                Console.WriteLine("Ducks eat only snails");
         }
 
-        public FarmProduct Product()
+        public void Product(List<FarmProduct> productList)
         {
-            FarmProduct product = new FarmProduct("Duck Egg", 1);
-            return product;
+            productList[0].SetQuantity(1);
         }
 
         public List<Duck> Multiply()

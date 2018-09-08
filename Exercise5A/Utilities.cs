@@ -11,10 +11,8 @@ namespace Exercise5A
         // prompts the user to type in animal names and creates an object of a coresponding animal type for each name.
         public static List<object> PopulateFarm()
         {
-
             var farmAnimals = new List<object>();
-
-            string[] animals = { "cows", "horses", "dogs", "ducks" };
+            string[] animals = { "cows", "horses", "sheeps", "ducks" };
             Console.WriteLine("Hello. Let's create your farm animals.");
             try
             {
@@ -23,8 +21,9 @@ namespace Exercise5A
                     bool keepLooping = true;
                     do
                     {
-                        Console.Write($"\nEntery the names for your {animal}, separated by commas. At least four names.\n\n>>> ");
+                        Console.Write($"\nEnter the names for your {animal}, separated by commas. At least four names.\n\n>>> ");
                         var names = Console.ReadLine().Split(',');
+                        // validates that the user entered at least four names, and non of them are empty strings
                         if (names.Count() >= 4 && names[names.Count() - 1] != "")
                         {
                             keepLooping = false;
@@ -36,10 +35,10 @@ namespace Exercise5A
                                         farmAnimals.Add(new Cow(name));
                                         break;
                                     case "horses":
-                                        farmAnimals.Add(new Horse(name));
+                                        farmAnimals.Add(new Duck(name));
                                         break;
-                                    case "dogs":
-                                        farmAnimals.Add(new Dog(name));
+                                    case "sheeps":
+                                        farmAnimals.Add(new Sheep(name));
                                         break;
                                     case "ducks":
                                         farmAnimals.Add(new Duck(name));
@@ -52,10 +51,6 @@ namespace Exercise5A
                             Console.Clear();
                             Console.WriteLine("At least four names must be entered.");
                         }
-                        if (animal == "ducks")
-                        {
-                            keepLooping = false;
-                        }
                     } while (keepLooping);
                 }
             }
@@ -64,6 +59,18 @@ namespace Exercise5A
                 Console.WriteLine(ex.Message);
             }
             return farmAnimals;
+        }
+
+        // creates a list of all four farm products with their initial quantities being 0;
+        public static List<FarmProduct> FarmProducts()
+        {
+            List<FarmProduct> productList = new List<FarmProduct>();
+            string[] products = { "egg", "hide", "wool", "milk" };
+            foreach(string product in products)
+            {
+                productList.Add(new FarmProduct(product, 0));
+            }
+            return productList;
         }
     }
 }
