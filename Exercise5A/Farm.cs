@@ -21,5 +21,32 @@ namespace Exercise5A
 
         public List<Object> GetAnimals() => animals;
         public List<FarmProduct> GetProducts() => products;
+
+        public void animalIntroduction()
+        {
+            for (int i = 0; i < animals.Count(); i++)
+            {
+                if (animals[i].GetType() == typeof(Cow))
+                {
+                    Cow myCow = (Cow)animals[i];
+                    myCow.Speak();
+                }
+                else if (animals[i].GetType() == typeof(Horse))
+                {
+                    Horse myCow = (Horse)animals[i];
+                    myCow.Speak();
+                }
+                else if (animals[i].GetType() == typeof(Sheep))
+                {
+                    Sheep myCow = (Sheep)animals[i];
+                    myCow.Speak();
+                }
+                else if (animals[i].GetType() == typeof(Duck))
+                {
+                    Duck myCow = (Duck)animals[i];
+                    myCow.Speak();
+                }
+            }
+        }
     }
 }

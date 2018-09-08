@@ -14,7 +14,7 @@ namespace Exercise5A
         {
             var farmAnimals = new List<Object>();
             string[] animals = { "cows", "horses", "sheeps", "ducks" };
-            Console.WriteLine("Hello. Let's create your farm animals.");
+            Console.WriteLine("\nHello. Let's create your farm animals.");
             try
             {
                 foreach (string animal in animals)
@@ -48,11 +48,12 @@ namespace Exercise5A
                                         break;
                                 }
                             }
+                            Console.Clear();
                         }
                         else
                         {
                             Console.Clear();
-                            Console.WriteLine("At least four names must be entered.");
+                            Console.WriteLine("\nAt least four names must be entered.");
                         }
                     } while (keepLooping);
                 }

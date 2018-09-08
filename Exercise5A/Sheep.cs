@@ -26,7 +26,7 @@ namespace Exercise5A
         // Requriement #4 - create four methods for each class. Lines 27-56
         public void Speak()
         {
-            Console.WriteLine($"{sound}! I'm a sheep. My name is {name}, and I grass .");
+            Console.WriteLine($"\n{sound}! I'm a sheep. My name is {name}, and I grass .");
         }
 
         public void Eat(string food)
@@ -34,7 +34,7 @@ namespace Exercise5A
             if(food == "grass")
                 size++;
             else
-                Console.WriteLine("Sheeps eat only grass");
+                Console.WriteLine("\nSheeps eat only grass");
         }
 
         public void Product(List<FarmProduct> productList)

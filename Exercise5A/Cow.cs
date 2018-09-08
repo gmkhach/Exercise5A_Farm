@@ -28,7 +28,7 @@ namespace Exercise5A
         // Requirement #2 - create one class with one method. lines 29-32
         public void Speak()
         {
-            Console.WriteLine($"{sound}! I'm a cow. My name is {name}, and I eat hay.");
+            Console.WriteLine($"\n{sound}! I'm a cow. My name is {name}, and I eat hay.");
         }
 
         public void Eat(string food)
@@ -36,7 +36,7 @@ namespace Exercise5A
             if (food == "hay")
                 size++;
             else
-                Console.WriteLine("Cows eat only hay");
+                Console.WriteLine("\nCows eat only hay");
         }
 
         public void Product(List<FarmProduct> productList)
