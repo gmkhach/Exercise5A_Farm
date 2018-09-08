@@ -37,7 +37,7 @@ namespace Exercise5A
                                         farmAnimals.Add(new Cow(name));
                                         break;
                                     case "horses":
-                                        farmAnimals.Add(new Duck(name));
+                                        farmAnimals.Add(new Horse(name));
                                         break;
                                     case "sheeps":
                                         farmAnimals.Add(new Sheep(name));
