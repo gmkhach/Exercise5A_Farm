@@ -22,9 +22,11 @@ namespace Exercise5A
                     do
                     {
                         Console.Write($"\nEnter the names for your {animal}, separated by commas. At least four names.\n\n>>> ");
-                        var names = Console.ReadLine().Split(',');
+                        var input = Console.ReadLine().Split(',').Select(x => x.Trim());
+                        // create an array of entered names that are not empty strings or strings of empty spaces only.
+                        var names = input.Where(x => !string.IsNullOrEmpty(x));
                         // validates that the user entered at least four names, and non of them are empty strings
-                        if (names.Count() >= 4 && names[names.Count() - 1] != "")
+                        if (names.Count() >= 4)
                         {
                             keepLooping = false;
                             foreach (string name in names)
